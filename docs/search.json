@@ -1,0 +1,65 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Harkirat Singh",
+    "section": "",
+    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "About2.html",
+    "href": "About2.html",
+    "title": "About",
+    "section": "",
+    "text": "I’m Harkirat Singh, currently enriching my skills with a Master’s in Data Analytics Engineering at George Mason University. My academic journey began with a B.Tech in Electronics & Communication Engineering from Kurukshetra University, where I not only delved into the technicalities of communication systems and programming but also honed my leadership skills through various roles like Class Representative and Sports Team Manager. I’ve always been passionate about technology, leading me to further my knowledge in programming languages like C, C++, and Python, and specialize in fields such as Machine Learning and Data Analytics. Balancing my love for technology, I also cherish my time spent in sports and literature, reflecting my belief in a well-rounded personal and professional life."
+  },
+  {
+    "objectID": "Academic History.html",
+    "href": "Academic History.html",
+    "title": "Academic History",
+    "section": "",
+    "text": "I’m Harkirat Singh, currently enriching my skills with a Master’s in Data Analytics Engineering at George Mason University. My academic journey began with a B.Tech in Electronics & Communication Engineering from Kurukshetra University, where I not only delved into the technicalities of communication systems and programming but also honed my leadership skills through various roles like Class Representative and Sports Team Manager. I’ve always been passionate about technology, leading me to further my knowledge in programming languages like C, C++, and Python, and specialize in fields such as Machine Learning and Data Analytics. Balancing my love for technology, I also cherish my time spent in sports and literature, reflecting my belief in a well-rounded personal and professional life."
+  },
+  {
+    "objectID": "Extracarricular.html",
+    "href": "Extracarricular.html",
+    "title": "Extracurricular Activities",
+    "section": "",
+    "text": "Beyond my academic pursuits, I’ve been actively engaged in extracurricular activities that have significantly shaped my teamwork and leadership skills. From a young age, roller hockey became a passion, leading me to compete and win medals at district, state, and national levels for over 15 years. My dedication to the sport taught me discipline, perseverance, and the importance of teamwork, as I balanced rigorous training sessions with my studies. Additionally, I’ve volunteered in various capacities and contributed to the managing committee of techno-cultural festivals, enhancing my organizational and management skills. These experiences have not only enriched my personal growth but also prepared me for collaborative and leadership roles in my professional journey."
+  },
+  {
+    "objectID": "Projects.html",
+    "href": "Projects.html",
+    "title": "Personal Projects",
+    "section": "",
+    "text": "Global Automation:\nThis project exemplifies my venture into smart automation, capable of enhancing convenience in homes and offices by controlling AC/heaters remotely, and even operating devices in hazardous areas where human intervention is risky. Developed using C language, it leverages the DTMF IC technology to interpret signals from mobile phone buttons, showcasing my ability to integrate simple technologies for complex solutions.\n\n\nExpense Manager Application:\nIn the pursuit of creating practical tools for everyday use, I developed an Android-based mobile application aimed at managing group expenses. Utilizing Kotlin and XML, this application serves as a dynamic tool to track and analyze budgets, encouraging efficient financial management. This project reflects my knack for developing user-friendly digital solutions that cater to the needs of managing personal finances.\n\n\nSmart Plant Monitoring System:\nMerging my interests in sustainability and technology, I designed a system that uses IoT to monitor plant health. By incorporating sensors and the Blynk IoT platform, along with C language, the system tracks humidity, temperature, and soil moisture, automating irrigation processes. This project is a testament to my commitment to environmental conservation through the innovative use of technology."
+  },
+  {
+    "objectID": "Projects.html#global-automation",
+    "href": "Projects.html#global-automation",
+    "title": "Personal Projects",
+    "section": "",
+    "text": "This project exemplifies my venture into smart automation, capable of enhancing convenience in homes and offices by controlling AC/heaters remotely, and even operating devices in hazardous areas where human intervention is risky. Developed using C language, it leverages the DTMF IC technology to interpret signals from mobile phone buttons, showcasing my ability to integrate simple technologies for complex solutions."
+  },
+  {
+    "objectID": "Projects.html#expense-manager-application",
+    "href": "Projects.html#expense-manager-application",
+    "title": "Personal Projects",
+    "section": "Expense Manager Application:",
+    "text": "Expense Manager Application:\nIn the pursuit of creating practical tools for everyday use, I developed an Android-based mobile application aimed at managing group expenses. Utilizing Kotlin and XML, this application serves as a dynamic tool to track and analyze budgets, encouraging efficient financial management. This project reflects my knack for developing user-friendly digital solutions that cater to the needs of managing personal finances."
+  },
+  {
+    "objectID": "Projects.html#smart-plant-monitoring-system",
+    "href": "Projects.html#smart-plant-monitoring-system",
+    "title": "Personal Projects",
+    "section": "Smart Plant Monitoring System:",
+    "text": "Smart Plant Monitoring System:\nMerging my interests in sustainability and technology, I designed a system that uses IoT to monitor plant health. By incorporating sensors and the Blynk IoT platform, along with C language, the system tracks humidity, temperature, and soil moisture, automating irrigation processes. This project is a testament to my commitment to environmental conservation through the innovative use of technology."
+  }
+]

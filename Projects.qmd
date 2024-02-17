@@ -1,0 +1,12 @@
+---
+title: "Personal Projects"
+editor: visual
+---
+# Global Automation: 
+This project exemplifies my venture into smart automation, capable of enhancing convenience in homes and offices by controlling AC/heaters remotely, and even operating devices in hazardous areas where human intervention is risky. Developed using C language, it leverages the DTMF IC technology to interpret signals from mobile phone buttons, showcasing my ability to integrate simple technologies for complex solutions.
+
+# Expense Manager Application: 
+In the pursuit of creating practical tools for everyday use, I developed an Android-based mobile application aimed at managing group expenses. Utilizing Kotlin and XML, this application serves as a dynamic tool to track and analyze budgets, encouraging efficient financial management. This project reflects my knack for developing user-friendly digital solutions that cater to the needs of managing personal finances.
+
+# Smart Plant Monitoring System: 
+Merging my interests in sustainability and technology, I designed a system that uses IoT to monitor plant health. By incorporating sensors and the Blynk IoT platform, along with C language, the system tracks humidity, temperature, and soil moisture, automating irrigation processes. This project is a testament to my commitment to environmental conservation through the innovative use of technology.

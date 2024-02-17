@@ -1,0 +1,24 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Harkirat Singh"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - Academic History.qmd
+      - Extracarricular.qmd
+      - Projects.qmd
+
+format:
+  html:
+    theme: Yeti
+    mainfont: poppins
+    
+    css: styles.css
+    toc: true
+
+
+

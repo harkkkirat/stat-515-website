@@ -1,0 +1,6 @@
+---
+title: "Academic History"
+editor: visual
+---
+
+I'm Harkirat Singh, currently enriching my skills with a Master's in Data Analytics Engineering at George Mason University. My academic journey began with a B.Tech in Electronics & Communication Engineering from Kurukshetra University, where I not only delved into the technicalities of communication systems and programming but also honed my leadership skills through various roles like Class Representative and Sports Team Manager. I've always been passionate about technology, leading me to further my knowledge in programming languages like C, C++, and Python, and specialize in fields such as Machine Learning and Data Analytics. Balancing my love for technology, I also cherish my time spent in sports and literature, reflecting my belief in a well-rounded personal and professional life.
