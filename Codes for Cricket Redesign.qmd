@@ -1,0 +1,147 @@
+---
+title: "Codes for Cricket Redesign"
+author: 
+  - "Harkirat Singh, G01476069"
+  - "Shukan Nikikumar Prajapati, G01474606"
+  - "Group No: 5"
+format: 
+  html:
+    theme: Yeti
+    mainfont: poppins
+    css: styles.css
+    toc: true
+---
+
+### Codes
+
+library(ggplot2)
+library(plotly)
+library(tidyr)
+library(patchwork)
+library(shiny)
+
+
+data = read.csv("Book3.csv")
+
+ui = fluidPage(
+  
+  
+  titlePanel("Indian Cricket Team World Cup Performance"),
+  
+  
+  sidebarLayout(
+    sidebarPanel(
+      
+      selectInput(inputId = "variable",
+                  label = "Choose a variable to visualize:",
+                  choices = list("India's Performance" = "India",
+                                 "India's Scores" = "India_Scores"),
+                  selected = "India"),
+      uiOutput("plot_type"),
+      hr(),
+      helpText("India's Performance shows the number of matches won and lost."),
+      helpText("India's Scores shows the highest and lowest total scores.")
+    ),
+    
+    
+    mainPanel(
+      plotlyOutput(outputId = "plot")
+    )
+  )
+)
+
+
+server = function(input, output, session) {
+  
+  
+  output$plot_type <- renderUI({
+    if (input$variable == "India" || input$variable == "India_Scores") {
+      selectInput(inputId = "plot_type",
+                  label = "Choose plot type:",
+                  choices = list("Type 1" = "Type1",
+                                 "Type 2" = "Type2"),
+                  selected = "Type1")
+    } else {
+      NULL
+    }
+  })
+  
+  
+  output$plot <- renderPlotly({
+    if (input$variable == "India") {
+      if (input$plot_type == "Type1") {
+        
+        data_long <- gather(data, key = "Result", value = "Count", Won, Lost)
+        
+       
+        p <- ggplot(data_long, aes(x = factor(Year), y = Count, fill = Result)) +
+          geom_bar(stat = "identity", aes(text = paste(Result, ": ", Count))) +
+          labs(title = "India's Performance in World Cup",
+               x = "Year", y = "Number of Matches", fill = "Match Result") +
+          theme_minimal() +
+          scale_fill_manual(values = c("Won" = "blue", "Lost" = "red"))
+        
+        
+        return(ggplotly(p, tooltip = "text"))
+      } else if (input$plot_type == "Type2") {
+        
+        data_long <- gather(data, key = "Result", value = "Count", Won, Lost)
+        
+        
+        p <- plot_ly(data_long, x = ~Year, y = ~Count, color = ~Result, fill = ~Result,
+                     type = "scatter", mode = "none", stackgroup = "one") %>%
+          layout(title = "India's Performance in World Cup",
+                 xaxis = list(title = "Year",
+                              tickmode = "array",
+                              tickvals = unique(data$Year),
+                              ticktext = unique(data$Year)),
+                 yaxis = list(title = "Number of Matches"))
+        
+        
+        return(p)
+      }
+    } else if (input$variable == "India_Scores") {
+      if (input$plot_type == "Type1") {
+        
+        p <- ggplot(data, aes(x = Year)) +
+          geom_line(aes(y = Highest.Total, group = 1, colour = "Highest Score",
+                        text = paste("Year:", Year, ", Highest Score:", Highest.Total))) +
+          geom_point(aes(y = Highest.Total, colour = "Highest Score",
+                         text = paste("Year:", Year, ", Highest Score:", Highest.Total))) +
+          geom_line(aes(y = Lowest.Total, group = 1, colour = "Lowest Score",
+                        text = paste("Year:", Year, ", Lowest Score:", Lowest.Total))) +
+          geom_point(aes(y = Lowest.Total, colour = "Lowest Score",
+                         text = paste("Year:", Year, ", Lowest Score:", Lowest.Total))) +
+          labs(title = "India's Highest and Lowest Scores in World Cup matches",
+               x = "Year", y = "Score", colour = "Type of Score") +
+          theme_minimal() +
+          scale_colour_manual(values = c("Highest Score" = "green", "Lowest Score" = "red")) +
+          scale_x_continuous(breaks = data$Year)
+        
+        
+        return(ggplotly(p, tooltip = "text"))
+      } else if (input$plot_type == "Type2") {
+        
+        data_long <- data %>%
+          gather(key = "Type", value = "Score", Highest.Total, Lowest.Total) %>%
+          arrange(Year, desc(Type)) 
+        
+        
+        p <- plot_ly(data_long, x = ~Year, y = ~Score, color = ~Type, fill = ~Type,
+                     type = "scatter", mode = "none", stackgroup = "one") %>%
+          layout(title = "India's Highest and Lowest Scores in World Cup matches",
+                 xaxis = list(title = "Year",
+                              tickmode = "array",
+                              tickvals = unique(data$Year),
+                              ticktext = unique(data$Year)),
+                 yaxis = list(title = "Score"))
+        
+        
+        return(p)
+      }
+    }
+  })
+}
+
+
+shinyApp(ui = ui, server = server)

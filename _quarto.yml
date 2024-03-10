@@ -6,12 +6,10 @@ website:
   title: "Harkirat Singh"
   navbar:
     left:
-      - href: index.qmd
-        text: Home
-      - Academic History.qmd
-      - Extracarricular.qmd
-      - Projects.qmd
-
+      - NFL Super Bowl Redesign.qmd
+      - India Performance Redesign.qmd
+      - Codes for NFL Redesign.qmd
+      - Codes for Cricket Redesign.qmd
 format:
   html:
     theme: Yeti

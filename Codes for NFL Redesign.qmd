@@ -1,0 +1,109 @@
+---
+title: "Codes for NFL Redesign"
+author: 
+  - "Harkirat Singh, G01476069"
+  - "Shukan Nikikumar Prajapati, G01474606"
+  - "Group No: 5"
+format: 
+  html:
+    theme: Yeti
+    mainfont: poppins
+    css: styles.css
+    toc: true
+---
+
+### Codes
+
+library(shiny)
+library(ggplot2)
+library(plotly)
+library(dplyr)
+library(shinydashboard)
+
+
+super_bowl_data = read.csv("Book1.csv")
+
+
+#visualization 1
+
+
+conference_colors = c("NFC" = "blue", "AFC" = "red")
+
+
+viz_1 = ggplot(super_bowl_data, aes(x = reorder(Teams, Wins), y = Wins, color = Conference, 
+                                text = paste("Division:", Division, "<br>Conference:", Conference))) +
+  geom_point(stat = 'identity', size = 3) +
+  scale_color_manual(values = conference_colors) +
+  coord_flip() +  # Make plot horizontal
+  theme_minimal() +
+  labs(title = 'NFL Teams Wins', x = 'Teams', y = 'Wins') +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1), 
+        legend.title = element_blank(),
+        plot.title = element_text(hjust = 0.5))
+
+
+viz_1 = ggplotly(viz_1, tooltip = "text") 
+
+viz_1
+
+
+
+
+#visualization 2
+
+
+ui = fluidPage(
+  selectInput("conference", "Choose Conference", choices = c("All", "NFC", "AFC")),
+  uiOutput("divisionUI"),
+  plotOutput("stackedBarPlot")
+)
+
+
+server = function(input, output, session) {
+  
+  
+  output$divisionUI = renderUI({
+    if (input$conference == "All") {
+      NULL
+    } else {
+      selectInput("division", "Choose Division", choices = c("All", "North", "South", "East", "West"), selected = "All")
+    }
+  })
+  
+  
+  output$stackedBarPlot = renderPlot({
+    data = super_bowl_data
+    
+    
+    if (input$conference != "All") {
+      data = data %>% filter(Conference == input$conference)
+    }
+    
+   
+    if (input$conference != "All" && input$division != "All" && !is.null(input$division)) {
+      data = data %>% filter(Division == input$division)
+    }
+    
+    
+    fill_aes = if (input$conference == "All") {
+      aes(fill = Conference)
+    } else {
+      aes(fill = Division)
+    }
+    
+    
+    ggplot(data, aes(x = reorder(Teams, Wins), y = Wins)) +
+      geom_bar(stat = "identity", position = "stack", fill_aes) +
+      scale_fill_manual(values = if (input$conference == "All") 
+        c("NFC" = "blue", "AFC" = "red") 
+        else 
+          c("North" = "#FFDD89", "South" = "#957DAD", "East" = "#FEC8D8", "West" = "#D0F0C0")) +
+      theme_minimal() +
+      labs(x = "Teams", y = "Count", fill = "Division / Conference") +
+      theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+      guides(fill = guide_legend(title = "Division / Conference"))
+  })
+}
+
+
+shinyApp(ui, server)
