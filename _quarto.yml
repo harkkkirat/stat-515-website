@@ -10,6 +10,7 @@ website:
       - India Performance Redesign.qmd
       - Codes for NFL Redesign.qmd
       - Codes for Cricket Redesign.qmd
+      - Video Explaination.qmd
 format:
   html:
     theme: Yeti

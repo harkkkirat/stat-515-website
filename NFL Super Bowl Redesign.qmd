@@ -58,12 +58,9 @@ In the pursuit of a more dynamic and intuitive user experience, the second visua
 
 **Personalized Insights** Dive deeper and tailor the view to your interests. With just a click, filter the visualization to display the triumphs of the teams within the AFC or NFC exclusively. But why stop there? A further click allows you to drill down into the divisions, unveiling the specific contributions each team has made to their division's success.
 
-<img src="/Users/harkkkirat/Desktop/STAT 515/Harkirat Singh/Conference.png" alt="Interactive Bar Plot Visualization"/>
-
 ![Interactive Bar Plot Visualization](Conference.png)
 
 ![Interactive Bar Plot Visualization](Division.png)
-
 
 **Your Data, Your Story** This interactive bar chart does more than just report wins; it invites you to explore and interact with history. The conditional panels respond to your curiosity, offering a personalized narrative of NFL achievements that evolves as you refine your focus. Discover the detailed stories behind each conference's legacy and how divisions shape up against each other in the competitive landscape of football glory.
 
@@ -73,8 +70,6 @@ As we reach the end of our visual and analytical excursion, the transformations 
 
 As you've navigated through these visual narratives, it is my hope that you’ve gained insights into the strategic nuances of visualization and the stories data can tell when harnessed with intention and skill. Whether you’re a seasoned data analyst or a curious onlooker, the redesigns invite you to appreciate the subtleties within the numbers and, perhaps, inspire you to embark on your own projects of data-driven discovery.
 
-
 ### References
 
-McCann, Adam E. "Super Bowl Winners." Tableau Public, Tableau Software, 2020,
-https://public.tableau.com/app/profile/adam.e.mccann/viz/SuperBowlWinners_16077204678580/SuperBowlWinners?_gl=1*1nvidia*_ga*MTAwMjY4OTY4My4xNzA5ODQ5MDQ1*_ga_8YLN0SNXVS*MTcwOTg0OTA0My4xLjEuMTcwOTg0OTIwOS4wLjAuMA.
+McCann, Adam E. "Super Bowl Winners." Tableau Public, Tableau Software, 2020, https://public.tableau.com/app/profile/adam.e.mccann/viz/SuperBowlWinners_16077204678580/SuperBowlWinners?\_gl=1*1nvidia*\_ga*MTAwMjY4OTY4My4xNzA5ODQ5MDQ1*\_ga_8YLN0SNXVS\*MTcwOTg0OTA0My4xLjEuMTcwOTg0OTIwOS4wLjAuMA.

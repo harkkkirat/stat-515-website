@@ -54,7 +54,7 @@ ui = fluidPage(
 server = function(input, output, session) {
   
   
-  output$plot_type <- renderUI({
+  output$plot_type = renderUI({
     if (input$variable == "India" || input$variable == "India_Scores") {
       selectInput(inputId = "plot_type",
                   label = "Choose plot type:",
@@ -67,14 +67,14 @@ server = function(input, output, session) {
   })
   
   
-  output$plot <- renderPlotly({
+  output$plot = renderPlotly({
     if (input$variable == "India") {
       if (input$plot_type == "Type1") {
         
-        data_long <- gather(data, key = "Result", value = "Count", Won, Lost)
+        data_long = gather(data, key = "Result", value = "Count", Won, Lost)
         
        
-        p <- ggplot(data_long, aes(x = factor(Year), y = Count, fill = Result)) +
+        p = ggplot(data_long, aes(x = factor(Year), y = Count, fill = Result)) +
           geom_bar(stat = "identity", aes(text = paste(Result, ": ", Count))) +
           labs(title = "India's Performance in World Cup",
                x = "Year", y = "Number of Matches", fill = "Match Result") +
@@ -85,10 +85,10 @@ server = function(input, output, session) {
         return(ggplotly(p, tooltip = "text"))
       } else if (input$plot_type == "Type2") {
         
-        data_long <- gather(data, key = "Result", value = "Count", Won, Lost)
+        data_long = gather(data, key = "Result", value = "Count", Won, Lost)
         
         
-        p <- plot_ly(data_long, x = ~Year, y = ~Count, color = ~Result, fill = ~Result,
+        p = plot_ly(data_long, x = ~Year, y = ~Count, color = ~Result, fill = ~Result,
                      type = "scatter", mode = "none", stackgroup = "one") %>%
           layout(title = "India's Performance in World Cup",
                  xaxis = list(title = "Year",
@@ -103,7 +103,7 @@ server = function(input, output, session) {
     } else if (input$variable == "India_Scores") {
       if (input$plot_type == "Type1") {
         
-        p <- ggplot(data, aes(x = Year)) +
+        p = ggplot(data, aes(x = Year)) +
           geom_line(aes(y = Highest.Total, group = 1, colour = "Highest Score",
                         text = paste("Year:", Year, ", Highest Score:", Highest.Total))) +
           geom_point(aes(y = Highest.Total, colour = "Highest Score",
@@ -122,12 +122,12 @@ server = function(input, output, session) {
         return(ggplotly(p, tooltip = "text"))
       } else if (input$plot_type == "Type2") {
         
-        data_long <- data %>%
+        data_long = data %>%
           gather(key = "Type", value = "Score", Highest.Total, Lowest.Total) %>%
           arrange(Year, desc(Type)) 
         
         
-        p <- plot_ly(data_long, x = ~Year, y = ~Score, color = ~Type, fill = ~Type,
+        p = plot_ly(data_long, x = ~Year, y = ~Score, color = ~Type, fill = ~Type,
                      type = "scatter", mode = "none", stackgroup = "one") %>%
           layout(title = "India's Highest and Lowest Scores in World Cup matches",
                  xaxis = list(title = "Year",
