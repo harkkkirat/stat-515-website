@@ -144,6 +144,10 @@ server = function(input, output, session) {
 }
 
 
-
-
 shinyApp(ui = ui, server = server)
+
+rsconnect::setAccountInfo(name='xxxxx', token='xxxxxx', secret='xxxxxx')
+
+setwd("/Users/harkkkirat/Desktop/STAT 515/Mid Project/2")
+
+rsconnect::deployApp(appName = "MyShinyApp515")

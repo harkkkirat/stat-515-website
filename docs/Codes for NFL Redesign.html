@@ -104,7 +104,7 @@ ul.task-list li input[type="checkbox"] {
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./Video Explaination.html" rel="" target="">
- <span class="menu-text">Video Explaination</span></a>
+ <span class="menu-text">Video Explanation</span></a>
   </li>  
 </ul>
             <div class="quarto-navbar-tools ms-auto">
@@ -163,6 +163,7 @@ ul.task-list li input[type="checkbox"] {
 <p>viz_1 = ggplot(super_bowl_data, aes(x = reorder(Teams, Wins), y = Wins, color = Conference, text = paste(“Division:”, Division, “<br>Conference:”, Conference))) + geom_point(stat = ‘identity’, size = 3) + scale_color_manual(values = conference_colors) + coord_flip() + # Make plot horizontal theme_minimal() + labs(title = ‘NFL Teams Wins’, x = ‘Teams’, y = ‘Wins’) + theme(axis.text.x = element_text(angle = 45, hjust = 1), legend.title = element_blank(), plot.title = element_text(hjust = 0.5))</p>
 <p>viz_1 = ggplotly(viz_1, tooltip = “text”)</p>
 <p>viz_1</p>
+<p>rsconnect::setAccountInfo(name=‘xxxxx’, token=‘xxxxxx’, secret=‘xxxxxx’) setwd(“//Users/harkkkirat/Desktop/STAT 515/Mid Project/3”) rsconnect::deployApp(appName = “MyShinyApp515no8”)</p>
 <p>#visualization 2</p>
 <p>ui = fluidPage( selectInput(“conference”, “Choose Conference”, choices = c(“All”, “NFC”, “AFC”)), uiOutput(“divisionUI”), plotOutput(“stackedBarPlot”) )</p>
 <p>server = function(input, output, session) {</p>
@@ -197,6 +198,9 @@ ggplot(data, aes(x = reorder(Teams, Wins), y = Wins)) +
   guides(fill = guide_legend(title = "Division / Conference"))</code></pre>
 <p>}) }</p>
 <p>shinyApp(ui, server)</p>
+<p>rsconnect::setAccountInfo(name=‘xxxxx’, token=‘xxxxxx’, secret=‘xxxxxx’)</p>
+<p>setwd(“//Users/harkkkirat/Desktop/STAT 515/Mid Project/1”)</p>
+<p>rsconnect::deployApp(appName = “MyShinyApp515no2”)</p>
 
 
 </section>

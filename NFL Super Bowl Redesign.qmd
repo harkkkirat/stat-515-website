@@ -43,6 +43,9 @@ In light of these insights, the redesign aims to transform how we interpret thes
 ### Redesigning NFL Super Bowl Wins Visualization
 
 ![Redesigned Dot Plot of NFL Team Wins](Dot%20Plot.png)
+<iframe src="https://harkkkirat.shinyapps.io/MyShinyApp515no8/" width="100%" height="600" frameborder="0"></iframe>
+
+</iframe>
 
 **Clarity in Data Storytelling** This visualization takes form as a dot plot, a choice made to strip back the complexity of traditional pie charts and sunburst diagrams. The dot plot excels in presenting discrete data points like our NFL teams’ wins, offering a direct, unobscured view into the successes of each franchise.
 
@@ -61,6 +64,10 @@ In the pursuit of a more dynamic and intuitive user experience, the second visua
 ![Interactive Bar Plot Visualization](Conference.png)
 
 ![Interactive Bar Plot Visualization](Division.png)
+
+<iframe src="https://harkkkirat.shinyapps.io/MyShinyApp515no7/" width="100%" height="600" frameborder="0"></iframe>
+
+</iframe>
 
 **Your Data, Your Story** This interactive bar chart does more than just report wins; it invites you to explore and interact with history. The conditional panels respond to your curiosity, offering a personalized narrative of NFL achievements that evolves as you refine your focus. Discover the detailed stories behind each conference's legacy and how divisions shape up against each other in the competitive landscape of football glory.
 

@@ -46,8 +46,9 @@ viz_1 = ggplotly(viz_1, tooltip = "text")
 
 viz_1
 
-
-
+rsconnect::setAccountInfo(name='xxxxx', token='xxxxxx', secret='xxxxxx')
+setwd("//Users/harkkkirat/Desktop/STAT 515/Mid Project/3")
+rsconnect::deployApp(appName = "MyShinyApp515no8")
 
 #visualization 2
 
@@ -107,3 +108,9 @@ server = function(input, output, session) {
 
 
 shinyApp(ui, server)
+
+rsconnect::setAccountInfo(name='xxxxx', token='xxxxxx', secret='xxxxxx')
+
+setwd("//Users/harkkkirat/Desktop/STAT 515/Mid Project/1")
+
+rsconnect::deployApp(appName = "MyShinyApp515no2")

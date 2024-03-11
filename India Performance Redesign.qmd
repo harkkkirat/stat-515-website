@@ -28,7 +28,7 @@ Step into this space where every number has a tale, every stat has a significanc
 
 ### Critical Review of the Original Cricket Visualization
 
-![Team's India's Statistics throughout the World Cup](Cricket Original.jpeg){alt="Team's India's Statistics throughout the World Cup"}
+![Team's India's Statistics throughout the World Cup](Cricket%20Original.jpeg)
 
 As we examine the original visualization of India's performance in the Cricket World Cup, it's clear that while it captures a range of historical data, there is room for improvement in how this data is presented.
 
@@ -42,20 +42,15 @@ In the redesign, it will be essential to correct this by ensuring that the total
 
 In the redesigned visualizations of India's Cricket Team's World Cup performance, we've embraced a user-centric approach that puts the power of exploration right at your fingertips. By iterating on the original charts, the new visuals present an interactive narrative that responds to your curiosity, allowing you to uncover the layers of India's cricketing milestones.
 
-**Customizable Insights** The first visualization offers a seamless way to navigate through India's highest and lowest scores in the World Cup. With a simple selection mechanism, you can choose to view either the peak performances that showcase India's scoring prowess or the challenging matches that tested their mettle.
+<iframe src="https://harkkkirat.shinyapps.io/MyShinyApp515/" style="border: none; width: 100%; height: 600px;">
 
-![India's Performance Type 1](India's Performance Type 1.png){alt="India's Performance Type 1"}
+</iframe>
+
+**Customizable Insights** The first visualization offers a seamless way to navigate through India's highest and lowest scores in the World Cup. With a simple selection mechanism, you can choose to view either the peak performances that showcase India's scoring prowess or the challenging matches that tested their mettle.
 
 **Performance at a Glance** The second visualization shifts focus to the outcomes of the matches. It allows you to select and scrutinize the number of matches won and lost, providing a transparent view of India's journey across the years. This interactive element highlights the fluctuations in performance, inviting you to analyze the trends and patterns that emerge over time.
 
-![India's Scores Type 1](India's Scores Type 1.png){alt="India's Scores Type 1"}
-
 **Empowering User Engagement** Both redesigns are equipped with tools that enable you to filter the data according to your interests. Whether you're looking to dissect performance year by year or compare scores across different tournaments, the choice is yours. It's a step towards a more dynamic and personalized experience, moving beyond static charts to create a space where every user can craft their own story from the data.
-
-![India's Performance Type 2](India's Performance Type 2.png){alt="India's Performance Type 2"}
-
-![India's Performance Type 2](India's Scores Type 2.png){alt="India's Performance Type 2"}
-
 
 These redesigned visualizations don't just tell you the statistics; they engage you in a dialogue with India's World Cup history. They represent not just a visual transformation but a step forward in how we interact with and understand data in the realm of sports analytics.
 
@@ -65,9 +60,6 @@ In conclusion, the endeavor to revamp India's Cricket World Cup performance visu
 
 The next steps may involve an even deeper dive into the nuances of cricket statistics. Exploring alternative models or incorporating additional datasets could provide fresh perspectives and a broader understanding of performance trends. Further visual exploration, perhaps by experimenting with different plot types, could enhance the narrative even more and may also earn bonus recognition for creativity and analytical rigor.
 
-
 ### References
 
-"Cricket World Cup Statistics 1975-2011." Knoema, 2024,
-https://knoema.com/ncxxnvf/cricket-world-cup-statistics-1975-2011?teams=India.
-
+"Cricket World Cup Statistics 1975-2011." Knoema, 2024, https://knoema.com/ncxxnvf/cricket-world-cup-statistics-1975-2011?teams=India.
