@@ -104,7 +104,7 @@ ul.task-list li input[type="checkbox"] {
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./Video Explaination.html" rel="" target="">
- <span class="menu-text">Video Explaination</span></a>
+ <span class="menu-text">Video Explanation</span></a>
   </li>  
 </ul>
             <div class="quarto-navbar-tools ms-auto">
@@ -178,12 +178,12 @@ mainPanel(
 )</code></pre>
 <p>) )</p>
 <p>server = function(input, output, session) {</p>
-<p>output<span class="math inline">\(plot_type &lt;- renderUI({  if (input\)</span>variable == “India” || input$variable == “India_Scores”) { selectInput(inputId = “plot_type”, label = “Choose plot type:”, choices = list(“Type 1” = “Type1”, “Type 2” = “Type2”), selected = “Type1”) } else { NULL } })</p>
-<p>output<span class="math inline">\(plot &lt;- renderPlotly({  if (input\)</span>variable == “India”) { if (input$plot_type == “Type1”) {</p>
-<pre><code>    data_long &lt;- gather(data, key = "Result", value = "Count", Won, Lost)
+<p>output<span class="math inline">\(plot_type = renderUI({  if (input\)</span>variable == “India” || input$variable == “India_Scores”) { selectInput(inputId = “plot_type”, label = “Choose plot type:”, choices = list(“Type 1” = “Type1”, “Type 2” = “Type2”), selected = “Type1”) } else { NULL } })</p>
+<p>output<span class="math inline">\(plot = renderPlotly({  if (input\)</span>variable == “India”) { if (input$plot_type == “Type1”) {</p>
+<pre><code>    data_long = gather(data, key = "Result", value = "Count", Won, Lost)
     
    
-    p &lt;- ggplot(data_long, aes(x = factor(Year), y = Count, fill = Result)) +
+    p = ggplot(data_long, aes(x = factor(Year), y = Count, fill = Result)) +
       geom_bar(stat = "identity", aes(text = paste(Result, ": ", Count))) +
       labs(title = "India's Performance in World Cup",
            x = "Year", y = "Number of Matches", fill = "Match Result") +
@@ -194,10 +194,10 @@ mainPanel(
     return(ggplotly(p, tooltip = "text"))
   } else if (input$plot_type == "Type2") {
     
-    data_long &lt;- gather(data, key = "Result", value = "Count", Won, Lost)
+    data_long = gather(data, key = "Result", value = "Count", Won, Lost)
     
     
-    p &lt;- plot_ly(data_long, x = ~Year, y = ~Count, color = ~Result, fill = ~Result,
+    p = plot_ly(data_long, x = ~Year, y = ~Count, color = ~Result, fill = ~Result,
                  type = "scatter", mode = "none", stackgroup = "one") %&gt;%
       layout(title = "India's Performance in World Cup",
              xaxis = list(title = "Year",
@@ -212,7 +212,7 @@ mainPanel(
 } else if (input$variable == "India_Scores") {
   if (input$plot_type == "Type1") {
     
-    p &lt;- ggplot(data, aes(x = Year)) +
+    p = ggplot(data, aes(x = Year)) +
       geom_line(aes(y = Highest.Total, group = 1, colour = "Highest Score",
                     text = paste("Year:", Year, ", Highest Score:", Highest.Total))) +
       geom_point(aes(y = Highest.Total, colour = "Highest Score",
@@ -231,12 +231,12 @@ mainPanel(
     return(ggplotly(p, tooltip = "text"))
   } else if (input$plot_type == "Type2") {
     
-    data_long &lt;- data %&gt;%
+    data_long = data %&gt;%
       gather(key = "Type", value = "Score", Highest.Total, Lowest.Total) %&gt;%
       arrange(Year, desc(Type)) 
     
     
-    p &lt;- plot_ly(data_long, x = ~Year, y = ~Score, color = ~Type, fill = ~Type,
+    p = plot_ly(data_long, x = ~Year, y = ~Score, color = ~Type, fill = ~Type,
                  type = "scatter", mode = "none", stackgroup = "one") %&gt;%
       layout(title = "India's Highest and Lowest Scores in World Cup matches",
              xaxis = list(title = "Year",
