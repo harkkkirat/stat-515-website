@@ -41,11 +41,15 @@ This research investigates how liver enzymes, which are important for diagnosing
 
 #### Approaches Considered and Rejected
 
-We initially considered several methods: - **Non-linear Models:** These were tested for capturing complex relationships but not used due to the risk of making the model too complex. - **Polynomial Regression:** Was also considered to deal with curves in the data but was not used to keep the model simple and easy to interpret.
+We initially considered several methods: 
+- **Non-linear Models:** These were tested for capturing complex relationships but not used due to the risk of making the model too complex. 
+- **Polynomial Regression:** Was also considered to deal with curves in the data but was not used to keep the model simple and easy to interpret.
 
 #### Real-World Application
 
-The findings are useful for: - **Early Diagnosis:** Better understanding of how liver enzymes change with age helps in spotting liver issues early. - **Personalizing Treatment:** Insights from the data can guide tailored treatments based on how enzyme levels change with age.
+The findings are useful for: 
+- **Early Diagnosis:** Better understanding of how liver enzymes change with age helps in spotting liver issues early. 
+- **Personalizing Treatment:** Insights from the data can guide tailored treatments based on how enzyme levels change with age.
 
 #### Conclusion
 
@@ -53,6 +57,7 @@ This study effectively used a Random Forest model to clarify how age impacts liv
 
 #### Future Directions
 
-Further research could improve these findings by: - **Including more factors** like broader demographic details and other health indicators to enhance predictions. - **Conducting longitudinal studies** to observe changes in enzyme levels over time, giving more insight into how liver diseases progress.
+Further research could improve these findings by: 
+- **Including more factors** like broader demographic details and other health indicators to enhance predictions. - **Conducting longitudinal studies** to observe changes in enzyme levels over time, giving more insight into how liver diseases progress.
 
 This webpage offers a detailed look at the research conducted, the methods used, the insights gained, and their practical implications, aiming to improve the management of liver health across different age groups.
