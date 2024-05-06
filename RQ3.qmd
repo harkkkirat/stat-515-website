@@ -63,3 +63,18 @@ This research uses detailed statistical modeling to improve how we predict and m
 - **Testing in Clinical Settings:** The next step would be to apply these models in clinical settings to confirm their practical value and to adjust them based on real-world data and outcomes.
 
 These efforts showcase how statistical modeling can be effectively used to tackle complex health challenges, providing substantial benefits in medical care and resource management.
+
+
+### References
+
+1. **UCI Machine Learning Repository: Hepatitis C Virus (HCV) Dataset**. Available at: [https://archive.ics.uci.edu/dataset/571/hcv+data](https://archive.ics.uci.edu/dataset/571/hcv+data). This link provides access to the dataset used in your analysis, essential for anyone looking to replicate or extend your research findings.
+
+2. **Professor's Notes on ANOVA**:
+   - *Unit 3 and Unit 4 Notes*: These documents are direct inputs from educational materials provided by your professor, covering detailed theoretical and practical applications of ANOVA, which underpin your analytical methodologies.
+
+3. **Box, G. E. P., Hunter, J. S., & Hunter, W. G.** (2005). *Statistics for Experimenters: Design, Innovation, and Discovery* (2nd Edition). Wiley. A foundational text on the principles of experimental design and analysis crucial for interpreting ANOVA results.
+
+4. **Montgomery, D. C.** (2017). *Design and Analysis of Experiments* (9th Edition). Wiley. Provides a comprehensive resource on experimental design and analysis, supporting the methodologies used in your analysis.
+
+5. **Neter, J., Wasserman, W., & Kutner, M. H.** (1996). *Applied Linear Statistical Models* (4th Edition). McGraw-Hill. Covers regression and analysis of variance in detail, supporting the statistical approaches and tests employed in your research.
+

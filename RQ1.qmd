@@ -25,7 +25,9 @@ This research investigates how liver enzymes, which are important for diagnosing
 
 **Data Preparation:** - We used data from the `hcvdat.csv` dataset focusing on age and liver enzymes (ALP, ALT, AST). - We removed missing values and grouped data into age categories ('Young', 'Middle-aged', 'Senior') to analyze trends based on age.
 
-**Model Training and Validation:** - A **Random Forest model** was chosen for its robustness in handling datasets with multiple predictors. It was trained to predict log-transformed Albumin levels. - **10-fold cross-validation** was used to validate the model, ensuring it performs well across different data subsets.
+**Model Training and Validation:** 
+- A **Random Forest model** was chosen for its robustness in handling datasets with multiple predictors. It was trained to predict log-transformed Albumin levels. 
+- **10-fold cross-validation** was used to validate the model, ensuring it performs well across different data subsets.
 
 **Model Evaluation:** - The model's accuracy was assessed with **Root Mean Square Error (RMSE)** and **R-squared** values, where it scored an R-squared of **0.937**. This means about 93.7% of the variability in Albumin levels was explained by the model. - The RMSE was **0.035**, showing the model's precision in predictions.
 
@@ -58,6 +60,22 @@ This study effectively used a Random Forest model to clarify how age impacts liv
 #### Future Directions
 
 Further research could improve these findings by: 
-- **Including more factors** like broader demographic details and other health indicators to enhance predictions. - **Conducting longitudinal studies** to observe changes in enzyme levels over time, giving more insight into how liver diseases progress.
+- **Including more factors** like broader demographic details and other health indicators to enhance predictions. 
+- **Conducting longitudinal studies** to observe changes in enzyme levels over time, giving more insight into how liver diseases progress.
 
 This webpage offers a detailed look at the research conducted, the methods used, the insights gained, and their practical implications, aiming to improve the management of liver health across different age groups.
+
+
+### References
+
+1. **UCI Machine Learning Repository: Hepatitis C Virus (HCV) Dataset**. Available at: [https://archive.ics.uci.edu/dataset/571/hcv+data](https://archive.ics.uci.edu/dataset/571/hcv+data). This link provides access to the dataset used in your analysis, essential for anyone looking to replicate or extend your research findings.
+
+2. **Professor's Notes on ANOVA**:
+   - *Unit 3 and Unit 4 Notes*: These documents are direct inputs from educational materials provided by your professor, covering detailed theoretical and practical applications of ANOVA, which underpin your analytical methodologies.
+
+3. **Box, G. E. P., Hunter, J. S., & Hunter, W. G.** (2005). *Statistics for Experimenters: Design, Innovation, and Discovery* (2nd Edition). Wiley. A foundational text on the principles of experimental design and analysis crucial for interpreting ANOVA results.
+
+4. **Montgomery, D. C.** (2017). *Design and Analysis of Experiments* (9th Edition). Wiley. Provides a comprehensive resource on experimental design and analysis, supporting the methodologies used in your analysis.
+
+5. **Neter, J., Wasserman, W., & Kutner, M. H.** (1996). *Applied Linear Statistical Models* (4th Edition). McGraw-Hill. Covers regression and analysis of variance in detail, supporting the statistical approaches and tests employed in your research.
+
