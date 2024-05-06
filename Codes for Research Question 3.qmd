@@ -3,6 +3,7 @@ title: "Codes for Research Question 3"
 author: 
   - "Harkirat Singh, G01476069"
   - "Shukan Nikikumar Prajapati, G01474606"
+  - "DharmpratapSingh ArunodaySingh Vaghela, G01476865"
   - "Group No: 7"
 format: 
   html:
