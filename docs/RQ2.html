@@ -6,8 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Harkirat Singh, G01476069">
+<meta name="author" content="Shukan Nikikumar Prajapati, G01474606">
+<meta name="author" content="Group No: 7">
 
-<title>Harkirat Singh</title>
+<title>Harkirat Singh - Research Question 2</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -33,6 +36,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
@@ -63,7 +67,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -85,7 +89,7 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Research Question 1</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./RQ2.html" rel="" target="">
+    <a class="nav-link active" href="./RQ2.html" rel="" target="" aria-current="page">
  <span class="menu-text">Research Question 2</span></a>
   </li>  
   <li class="nav-item">
@@ -115,30 +119,88 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#research-question-2" id="toc-research-question-2" class="nav-link active" data-scroll-target="#research-question-2">Research Question 2</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
-<div class="quarto-about-jolla">
-  <img src="IMG_7943.JPG" class="about-image
-  round " style="height: 15em; width: 15em;">
- <header id="title-block-header" class="quarto-title-block default">
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Harkirat Singh</h1>
+<h1 class="title">Research Question 2</h1>
 </div>
+
+
+
 <div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Authors</div>
+    <div class="quarto-title-meta-contents">
+             <p>Harkirat Singh, G01476069 </p>
+             <p>Shukan Nikikumar Prajapati, G01474606 </p>
+             <p>Group No: 7 </p>
+          </div>
   </div>
-</header><main class="content" id="quarto-document-content">
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="research-question-2" class="level3">
+<h3 class="anchored" data-anchor-id="research-question-2">Research Question 2</h3>
+<section id="overview" class="level4">
+<h4 class="anchored" data-anchor-id="overview">Overview</h4>
+<p><strong>Research Question 2:</strong> Does gender influence biochemical responses in hepatitis C patients?</p>
+<p>This question explores how biochemical markers, specifically Albumin and Bilirubin, respond differently in male and female hepatitis C patients. These markers are crucial for assessing liver health, and understanding their behavior can aid in more personalized healthcare.</p>
+</section>
+<section id="data-preparation-and-analysis" class="level4">
+<h4 class="anchored" data-anchor-id="data-preparation-and-analysis">Data Preparation and Analysis</h4>
+<p><strong>Data Preparation:</strong> We started by refining our dataset to include only relevant variables such as gender, Albumin, and Bilirubin levels, alongside age and hepatitis C status. We rigorously removed records with missing values to ensure the accuracy of our analysis.</p>
+<p><strong>Statistical Analysis:</strong><br>
+- <strong>ANOVA and Multiple Regression Models:</strong> To assess the influence of gender on liver enzyme levels, we utilized these statistical methods. These models helped us quantify the differences and also explore potential interactions with age, which might modify how gender influences these biochemical markers. - <strong>Interaction Effects:</strong> We specifically looked for interaction effects between gender and other variables like age to understand if younger or older men and women showed different biochemical responses.</p>
+<p><strong>Visualizations:</strong> We created several visual aids, including interaction plots and box plots, to visually represent the data. These visuals help illustrate any apparent differences or trends in how biochemical markers are influenced by gender across different age groups.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="RQ2-1.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Interaction of Category, Sex, and Age on log(GGT) Levels</figcaption>
+</figure>
+</div>
+<p><strong>Model Evaluation:</strong><br>
+- <strong>Analysis Outcomes:</strong> The primary outputs of our analysis were the ANOVA tables, which provided p-values and F-statistics necessary to determine the significance of the observed differences. - <strong>Key Results:</strong> The ANOVA results indicated significant gender differences in biochemical responses, with F-statistic values suggesting robust model fit. For instance, the F value for the interaction between gender and age was 6.652 (p &lt; 0.0001), indicating significant interaction effects.</p>
+</section>
+<section id="approaches-considered-and-rejected" class="level4">
+<h4 class="anchored" data-anchor-id="approaches-considered-and-rejected">Approaches Considered and Rejected</h4>
+<ul>
+<li><strong>Logistic Regression:</strong> Initially considered for its simplicity in handling binary outcomes, we ultimately did not use logistic regression because our focus was on continuous biochemical markers.</li>
+<li><strong>Complex Multivariate Models:</strong> While potentially more robust, these models were deemed too complex for our current analysis scope, potentially complicating the interpretation without providing additional actionable insights.</li>
+</ul>
+</section>
+<section id="real-world-application" class="level4">
+<h4 class="anchored" data-anchor-id="real-world-application">Real-World Application</h4>
+<ul>
+<li><strong>Tailored Treatment Strategies:</strong> The insights derived from this analysis are crucial for developing tailored treatment strategies that consider gender differences, potentially improving outcomes for hepatitis C patients.</li>
+<li><strong>Enhanced Disease Understanding:</strong> This research enhances our understanding of how hepatitis C interacts with biological differences between genders, which can be pivotal in advancing targeted therapy approaches.</li>
+</ul>
+</section>
+<section id="conclusion" class="level4">
+<h4 class="anchored" data-anchor-id="conclusion">Conclusion</h4>
+<p>Our detailed analysis highlighted important differences in how male and female hepatitis C patients respond biochemically to the infection. By</p>
 
 
-</main> 
-  <hr class="about-sep">
-   <div class="about-links">
-  <a href="mailto:singharkirat03@gmail.com" class="about-link" rel="" target="">
-    <i class="bi bi-envelope"></i>
-     <span class="about-link-text">Email</span>
-  </a>
-</div>
-</div>
- <!-- /main -->
+</section>
+</section>
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -159,6 +221,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
   const isCodeAnnotation = (el) => {
     for (const clz of el.classList) {
       if (clz.startsWith('code-annotation-')) {                     

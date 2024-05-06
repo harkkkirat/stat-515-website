@@ -6,8 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Harkirat Singh, G01476069">
+<meta name="author" content="Shukan Nikikumar Prajapati, G01474606">
+<meta name="author" content="Group No: 7">
 
-<title>Harkirat Singh</title>
+<title>Harkirat Singh - Codes for Research Question 1</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -33,6 +36,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
@@ -63,7 +67,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -93,7 +97,7 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Research Question 3</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./Codes for Research Question 1.html" rel="" target="">
+    <a class="nav-link active" href="./Codes for Research Question 1.html" rel="" target="" aria-current="page">
  <span class="menu-text">Codes for Research Question 1</span></a>
   </li>  
   <li class="nav-item">
@@ -115,30 +119,61 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#codes" id="toc-codes" class="nav-link active" data-scroll-target="#codes">Codes</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
-<div class="quarto-about-jolla">
-  <img src="IMG_7943.JPG" class="about-image
-  round " style="height: 15em; width: 15em;">
- <header id="title-block-header" class="quarto-title-block default">
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Harkirat Singh</h1>
+<h1 class="title">Codes for Research Question 1</h1>
 </div>
+
+
+
 <div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Authors</div>
+    <div class="quarto-title-meta-contents">
+             <p>Harkirat Singh, G01476069 </p>
+             <p>Shukan Nikikumar Prajapati, G01474606 </p>
+             <p>Group No: 7 </p>
+          </div>
   </div>
-</header><main class="content" id="quarto-document-content">
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="codes" class="level1">
+<h1>Codes</h1>
+<p>library(tidyverse) library(readr) library(caret) library(randomForest)</p>
+<p>data &lt;- read_csv(“hcvdat.csv”) %&gt;% mutate( AgeGroup = cut(Age, breaks = c(0, 30, 50, Inf), labels = c(“Young”, “Middle-aged”, “Senior”)), Sex = factor(Sex, levels = c(“m”, “f”)), ALB_log = log(ALB + 1), Age2 = Age^2 ) %&gt;% na.omit()</p>
+<p>set.seed(123) train_indices &lt;- sample(1:nrow(data), 0.8 * nrow(data)) train_data &lt;- data[train_indices, ] validation_data &lt;- data[-train_indices, ]</p>
+<p>fitControl &lt;- trainControl(method = “cv”, number = 10, savePredictions = “final”) rf_model &lt;- train( ALB_log ~ Sex + Age + ALB + ALP + ALT + AST + BIL + CHE + CHOL + CREA + GGT + PROT + Age2, data = train_data, method = “rf”, ntree = 500, trControl = fitControl, importance = TRUE )</p>
+<p>print(rf_model) varImpPlot(rf_model$finalModel, main = “Variable Importance”)</p>
+<p>predictions &lt;- predict(rf_model, newdata = validation_data) actuals &lt;- validation_data$ALB_log residuals &lt;- actuals - predictions RMSE &lt;- sqrt(mean(residuals^2)) R2 &lt;- cor(actuals, predictions)^2</p>
+<p>print(paste(“RMSE:”, RMSE)) print(paste(“R-squared:”, R2))</p>
+<p>plot_data &lt;- data.frame(Fitted = predictions, Residuals = residuals) ggplot(plot_data, aes(x = Fitted, y = Residuals)) + geom_point() + geom_smooth(method = “lm”, se = TRUE, color = “blue”) + labs(title = “Residuals vs Fitted Values”, x = “Fitted Values”, y = “Residuals”)</p>
+<p>data &lt;- data %&gt;% mutate(AgeGroup = cut(Age, breaks = c(0, 30, 50, 70), labels = c(“0-30”, “31-50”, “51-70”)))</p>
+<p>age_group_means &lt;- data %&gt;% group_by(AgeGroup) %&gt;% summarise( Mean_ALP = mean(ALP, na.rm = TRUE), Mean_ALT = mean(ALT, na.rm = TRUE), Mean_AST = mean(AST, na.rm = TRUE) )</p>
+<p>age_group_means %&gt;% gather(key = “Enzyme”, value = “Mean_Level”, -AgeGroup) %&gt;% ggplot(aes(x = AgeGroup, y = Mean_Level, fill = Enzyme)) + geom_bar(stat = “identity”, position = position_dodge()) + labs(title = “Average Liver Enzyme Levels by Age Group”, x = “Age Group”, y = “Average Enzyme Level”) + theme_minimal()</p>
 
 
-</main> 
-  <hr class="about-sep">
-   <div class="about-links">
-  <a href="mailto:singharkirat03@gmail.com" class="about-link" rel="" target="">
-    <i class="bi bi-envelope"></i>
-     <span class="about-link-text">Email</span>
-  </a>
-</div>
-</div>
- <!-- /main -->
+</section>
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -159,6 +194,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
   const isCodeAnnotation = (el) => {
     for (const clz of el.classList) {
       if (clz.startsWith('code-annotation-')) {                     

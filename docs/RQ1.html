@@ -6,8 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Harkirat Singh, G01476069">
+<meta name="author" content="Shukan Nikikumar Prajapati, G01474606">
+<meta name="author" content="Group No: 7">
 
-<title>Harkirat Singh</title>
+<title>Harkirat Singh - Research Question 1</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -33,6 +36,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
@@ -63,7 +67,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -81,7 +85,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./RQ1.html" rel="" target="">
+    <a class="nav-link active" href="./RQ1.html" rel="" target="" aria-current="page">
  <span class="menu-text">Research Question 1</span></a>
   </li>  
   <li class="nav-item">
@@ -115,30 +119,95 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#research-question-1" id="toc-research-question-1" class="nav-link active" data-scroll-target="#research-question-1">Research Question 1</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
-<div class="quarto-about-jolla">
-  <img src="IMG_7943.JPG" class="about-image
-  round " style="height: 15em; width: 15em;">
- <header id="title-block-header" class="quarto-title-block default">
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Harkirat Singh</h1>
+<h1 class="title">Research Question 1</h1>
 </div>
+
+
+
 <div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Authors</div>
+    <div class="quarto-title-meta-contents">
+             <p>Harkirat Singh, G01476069 </p>
+             <p>Shukan Nikikumar Prajapati, G01474606 </p>
+             <p>Group No: 7 </p>
+          </div>
   </div>
-</header><main class="content" id="quarto-document-content">
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="research-question-1" class="level3">
+<h3 class="anchored" data-anchor-id="research-question-1">Research Question 1</h3>
+<section id="overview" class="level4">
+<h4 class="anchored" data-anchor-id="overview">Overview</h4>
+<p><strong>Research Question 1:</strong> How do liver enzyme levels (ALP, ALT, AST) change with age in people with hepatitis C compared to healthy individuals?</p>
+<p>This research investigates how liver enzymes, which are important for diagnosing liver issues, vary as people get older, especially comparing those with hepatitis C to healthy people.</p>
+</section>
+<section id="data-preparation-and-analysis" class="level4">
+<h4 class="anchored" data-anchor-id="data-preparation-and-analysis">Data Preparation and Analysis</h4>
+<p><strong>Data Preparation:</strong> - We used data from the <code>hcvdat.csv</code> dataset focusing on age and liver enzymes (ALP, ALT, AST). - We removed missing values and grouped data into age categories (‘Young’, ‘Middle-aged’, ‘Senior’) to analyze trends based on age.</p>
+<p><strong>Model Training and Validation:</strong> - A <strong>Random Forest model</strong> was chosen for its robustness in handling datasets with multiple predictors. It was trained to predict log-transformed Albumin levels. - <strong>10-fold cross-validation</strong> was used to validate the model, ensuring it performs well across different data subsets.</p>
+<p><strong>Model Evaluation:</strong> - The model’s accuracy was assessed with <strong>Root Mean Square Error (RMSE)</strong> and <strong>R-squared</strong> values, where it scored an R-squared of <strong>0.937</strong>. This means about 93.7% of the variability in Albumin levels was explained by the model. - The RMSE was <strong>0.035</strong>, showing the model’s precision in predictions.</p>
+</section>
+<section id="visualizations-and-insights" class="level4">
+<h4 class="anchored" data-anchor-id="visualizations-and-insights">Visualizations and Insights</h4>
+<p><strong>Enzyme Level Analysis by Age Group:</strong> - We made a bar plot to show average liver enzyme levels by age group, which helps us see changes in enzyme levels across ages, especially noting increases in older groups.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="RQ1-2.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Enzyme Level Analysis by Age Group</figcaption>
+</figure>
+</div>
+<p><strong>Model Fit Visualization:</strong> - <strong>Residuals vs.&nbsp;Fitted Values Plot:</strong> Checked to ensure our model fits well. The plot showed residuals spread randomly, suggesting the model was appropriate without any clear misfit patterns.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="RQ1-3.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Residuals vs.&nbsp;Fitted Values Plot</figcaption>
+</figure>
+</div>
+</section>
+<section id="approaches-considered-and-rejected" class="level4">
+<h4 class="anchored" data-anchor-id="approaches-considered-and-rejected">Approaches Considered and Rejected</h4>
+<p>We initially considered several methods: - <strong>Non-linear Models:</strong> These were tested for capturing complex relationships but not used due to the risk of making the model too complex. - <strong>Polynomial Regression:</strong> Was also considered to deal with curves in the data but was not used to keep the model simple and easy to interpret.</p>
+</section>
+<section id="real-world-application" class="level4">
+<h4 class="anchored" data-anchor-id="real-world-application">Real-World Application</h4>
+<p>The findings are useful for: - <strong>Early Diagnosis:</strong> Better understanding of how liver enzymes change with age helps in spotting liver issues early. - <strong>Personalizing Treatment:</strong> Insights from the data can guide tailored treatments based on how enzyme levels change with age.</p>
+</section>
+<section id="conclusion" class="level4">
+<h4 class="anchored" data-anchor-id="conclusion">Conclusion</h4>
+<p>This study effectively used a Random Forest model to clarify how age impacts liver enzyme levels in hepatitis C patients compared to healthy individuals. It provided useful insights that could improve how liver conditions are managed.</p>
+</section>
+<section id="future-directions" class="level4">
+<h4 class="anchored" data-anchor-id="future-directions">Future Directions</h4>
+<p>Further research could improve these findings by: - <strong>Including more factors</strong> like broader demographic details and other health indicators to enhance predictions. - <strong>Conducting longitudinal studies</strong> to observe changes in enzyme levels over time, giving more insight into how liver diseases progress.</p>
+<p>This webpage offers a detailed look at the research conducted, the methods used, the insights gained, and their practical implications, aiming to improve the management of liver health across different age groups.</p>
 
 
-</main> 
-  <hr class="about-sep">
-   <div class="about-links">
-  <a href="mailto:singharkirat03@gmail.com" class="about-link" rel="" target="">
-    <i class="bi bi-envelope"></i>
-     <span class="about-link-text">Email</span>
-  </a>
-</div>
-</div>
- <!-- /main -->
+</section>
+</section>
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -159,6 +228,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
   const isCodeAnnotation = (el) => {
     for (const clz of el.classList) {
       if (clz.startsWith('code-annotation-')) {                     

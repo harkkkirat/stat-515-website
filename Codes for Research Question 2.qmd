@@ -1,0 +1,33 @@
+---
+title: "Codes for Research Question 2"
+author: 
+  - "Harkirat Singh, G01476069"
+  - "Shukan Nikikumar Prajapati, G01474606"
+  - "Group No: 7"
+format: 
+  html:
+    theme: Yeti
+    mainfont: poppins
+    css: styles.css
+    toc: true
+---
+
+# Codes
+
+library(tidyverse) library(car)
+
+data_viable \<- read_csv("hcvdat.csv") %\>% mutate( Category = factor(Category, levels = c("0=Blood Donor", "1=Hepatitis", "2=Fibrosis", "3=Cirrhosis")), Sex = factor(Sex, levels = c("m", "f")), AgeGroup = cut(Age, breaks = c(0, 30, 50, 75, Inf), labels = c("Young", "Middle-aged", "Senior", "Elderly")) )
+
+levene_test_category \<- leveneTest(GGT \~ Category, data = data_viable) levene_test_sex \<- leveneTest(GGT \~ Sex, data = data_viable) levene_test_agegroup \<- leveneTest(GGT \~ AgeGroup, data = data_viable) levene_test_cat_sex \<- leveneTest(GGT \~ Category:Sex, data = data_viable)
+
+print(levene_test_category) print(levene_test_sex) print(levene_test_agegroup) print(levene_test_cat_sex)
+
+data_viable$log_GGT <- log(data_viable$GGT + 1)
+
+anova_log_ggt \<- aov(log_GGT \~ Category \* Sex \* AgeGroup, data = data_viable) print(summary(anova_log_ggt))
+
+simple_model \<- lm(log_GGT \~ Category + Sex + AgeGroup, data = data_viable) print(summary(simple_model))
+
+p \<- ggplot(data_viable, aes(x = Category, y = log_GGT, color = Sex, shape = AgeGroup)) + geom_point(alpha = 0.6) + geom_smooth(method = "lm", se = FALSE, fullrange = TRUE) + facet_wrap(\~AgeGroup) + labs(title = "Interaction of Category, Sex, and Age on log(GGT) Levels", y = "Log of Gamma-Glutamyl Transferase", x = "Category") + scale_color_brewer(palette = "Set1") + theme_minimal()
+
+print(p)

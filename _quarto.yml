@@ -6,11 +6,12 @@ website:
   title: "Harkirat Singh"
   navbar:
     left:
-      - NFL Super Bowl Redesign.qmd
-      - India Performance Redesign.qmd
-      - Codes for NFL Redesign.qmd
-      - Codes for Cricket Redesign.qmd
-      - Video Explaination.qmd
+      - RQ1.qmd
+      - RQ2.qmd
+      - RQ3.qmd
+      - Codes for Research Question 1.qmd
+      - Codes for Research Question 2.qmd
+      - Codes for Research Question 3.qmd
 format:
   html:
     theme: Yeti
