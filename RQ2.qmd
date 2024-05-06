@@ -17,7 +17,7 @@ format:
 
 #### Overview
 
-**Research Question 2:** Does gender influence biochemical responses in hepatitis C patients?
+**Research Question 2:** Does gender influence biochemical responses in hepatitis C patients.
 
 This question explores how biochemical markers, specifically Gamma-Glutamyl Transferase (GGT), respond differently in male and female hepatitis C patients. GGT is crucial for assessing liver health, and understanding its behavior can aid in more personalized healthcare.
 
