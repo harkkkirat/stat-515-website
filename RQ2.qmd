@@ -19,11 +19,11 @@ format:
 
 **Research Question 2:** Does gender influence biochemical responses in hepatitis C patients?
 
-This question explores how biochemical markers, specifically Albumin and Bilirubin, respond differently in male and female hepatitis C patients. These markers are crucial for assessing liver health, and understanding their behavior can aid in more personalized healthcare.
+This question explores how biochemical markers, specifically Gamma-Glutamyl Transferase (GGT), respond differently in male and female hepatitis C patients. GGT is crucial for assessing liver health, and understanding its behavior can aid in more personalized healthcare.
 
 #### Data Preparation and Analysis
 
-**Data Preparation:** We started by refining our dataset to include only relevant variables such as gender, Albumin, and Bilirubin levels, alongside age and hepatitis C status. We rigorously removed records with missing values to ensure the accuracy of our analysis.
+**Data Preparation:** We started by refining our dataset to include only relevant variables such as gender, GGT levels, alongside age and hepatitis C status. We rigorously removed records with missing values to ensure the accuracy of our analysis.
 
 **Statistical Analysis:**\
 - **ANOVA and Multiple Regression Models:** To assess the influence of gender on liver enzyme levels, we utilized these statistical methods. These models helped us quantify the differences and also explore potential interactions with age, which might modify how gender influences these biochemical markers. - **Interaction Effects:** We specifically looked for interaction effects between gender and other variables like age to understand if younger or older men and women showed different biochemical responses.
@@ -63,4 +63,3 @@ Our detailed analysis highlighted important differences in how male and female h
 4. **Montgomery, D. C.** (2017). *Design and Analysis of Experiments* (9th Edition). Wiley. Provides a comprehensive resource on experimental design and analysis, supporting the methodologies used in your analysis.
 
 5. **Neter, J., Wasserman, W., & Kutner, M. H.** (1996). *Applied Linear Statistical Models* (4th Edition). McGraw-Hill. Covers regression and analysis of variance in detail, supporting the statistical approaches and tests employed in your research.
-
