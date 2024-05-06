@@ -66,7 +66,6 @@ Further research could improve these findings by:
 This webpage offers a detailed look at the research conducted, the methods used, the insights gained, and their practical implications, aiming to improve the management of liver health across different age groups.
 
 
-
 ### References
 
 1. **UCI Machine Learning Repository: Hepatitis C Virus (HCV) Dataset**. Available at: [https://archive.ics.uci.edu/dataset/571/hcv+data](https://archive.ics.uci.edu/dataset/571/hcv+data). This link provides access to the dataset used in your analysis, essential for anyone looking to replicate or extend your research findings.
@@ -79,5 +78,4 @@ This webpage offers a detailed look at the research conducted, the methods used,
 4. **Montgomery, D. C.** (2017). *Design and Analysis of Experiments* (9th Edition). Wiley. Provides a comprehensive resource on experimental design and analysis, supporting the methodologies used in your analysis.
 
 5. **Neter, J., Wasserman, W., & Kutner, M. H.** (1996). *Applied Linear Statistical Models* (4th Edition). McGraw-Hill. Covers regression and analysis of variance in detail, supporting the statistical approaches and tests employed in your research.
-
 
