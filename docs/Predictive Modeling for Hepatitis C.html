@@ -8,9 +8,10 @@
 
 <meta name="author" content="Harkirat Singh, G01476069">
 <meta name="author" content="Shukan Nikikumar Prajapati, G01474606">
-<meta name="author" content="Group No: 5">
+<meta name="author" content="DharmpratapSingh ArunodaySingh Vaghela, G01476865">
+<meta name="author" content="Group No: 7">
 
-<title>Home - Sports Data Redesign Projects</title>
+<title>Home - Hepatitis C Data Analysis</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -89,7 +90,7 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Bridge Longevity Analysis</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./Predictive Modeling for Hepatitis C.html" rel="" target="">
+    <a class="nav-link active" href="./Predictive Modeling for Hepatitis C.html" rel="" target="" aria-current="page">
  <span class="menu-text">Predictive Modeling for Hepatitis C</span></a>
   </li>  
   <li class="nav-item">
@@ -97,7 +98,7 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Movie Recommendation System (KNN)</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./India Performance Redesign.html" rel="" target="" aria-current="page">
+    <a class="nav-link" href="./India Performance Redesign.html" rel="" target="">
  <span class="menu-text">India’s Cricket Performance Redesign</span></a>
   </li>  
 </ul>
@@ -112,31 +113,35 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
     <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On This Page</h2>
+    <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#sports-data-redesign-projects" id="toc-sports-data-redesign-projects" class="nav-link active" data-scroll-target="#sports-data-redesign-projects"><span class="header-section-number">1</span> Sports Data Redesign Projects</a>
+  <li><a href="#hepatitis-c-data-analysis" id="toc-hepatitis-c-data-analysis" class="nav-link active" data-scroll-target="#hepatitis-c-data-analysis"><span class="header-section-number">1</span> Hepatitis C Data Analysis</a>
   <ul class="collapse">
-  <li><a href="#indias-cricket-performance-redesign" id="toc-indias-cricket-performance-redesign" class="nav-link" data-scroll-target="#indias-cricket-performance-redesign"><span class="header-section-number">1.1</span> India’s Cricket Performance Redesign</a>
+  <li><a href="#research-question-1-age-and-liver-enzymes" id="toc-research-question-1-age-and-liver-enzymes" class="nav-link" data-scroll-target="#research-question-1-age-and-liver-enzymes"><span class="header-section-number">1.1</span> Research Question 1: Age and Liver Enzymes</a>
   <ul class="collapse">
-  <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction"><span class="header-section-number">1.1.1</span> Introduction</a></li>
-  <li><a href="#original-visualization-a-critical-review" id="toc-original-visualization-a-critical-review" class="nav-link" data-scroll-target="#original-visualization-a-critical-review"><span class="header-section-number">1.1.2</span> Original Visualization: A Critical Review</a></li>
-  <li><a href="#redesigned-visualization" id="toc-redesigned-visualization" class="nav-link" data-scroll-target="#redesigned-visualization"><span class="header-section-number">1.1.3</span> Redesigned Visualization</a></li>
-  <li><a href="#key-insights" id="toc-key-insights" class="nav-link" data-scroll-target="#key-insights"><span class="header-section-number">1.1.4</span> Key Insights</a></li>
+  <li><a href="#overview" id="toc-overview" class="nav-link" data-scroll-target="#overview"><span class="header-section-number">1.1.1</span> 0.1 Overview</a></li>
+  <li><a href="#data-preparation-and-analysis" id="toc-data-preparation-and-analysis" class="nav-link" data-scroll-target="#data-preparation-and-analysis"><span class="header-section-number">1.1.2</span> 0.2 Data Preparation and Analysis</a></li>
+  <li><a href="#visualizations" id="toc-visualizations" class="nav-link" data-scroll-target="#visualizations"><span class="header-section-number">1.1.3</span> 0.3 Visualizations</a></li>
+  <li><a href="#approaches-considered-and-rejected" id="toc-approaches-considered-and-rejected" class="nav-link" data-scroll-target="#approaches-considered-and-rejected"><span class="header-section-number">1.1.4</span> 0.4 Approaches Considered and Rejected</a></li>
+  <li><a href="#real-world-application" id="toc-real-world-application" class="nav-link" data-scroll-target="#real-world-application"><span class="header-section-number">1.1.5</span> 0.5 Real-World Application</a></li>
   </ul></li>
-  <li><a href="#nfl-super-bowl-wins-redesign-project" id="toc-nfl-super-bowl-wins-redesign-project" class="nav-link" data-scroll-target="#nfl-super-bowl-wins-redesign-project"><span class="header-section-number">1.2</span> NFL Super Bowl Wins Redesign Project</a>
+  <li><a href="#research-question-2-gender-influence-on-biochemical-responses" id="toc-research-question-2-gender-influence-on-biochemical-responses" class="nav-link" data-scroll-target="#research-question-2-gender-influence-on-biochemical-responses"><span class="header-section-number">1.2</span> Research Question 2: Gender Influence on Biochemical Responses</a>
   <ul class="collapse">
-  <li><a href="#introduction-1" id="toc-introduction-1" class="nav-link" data-scroll-target="#introduction-1"><span class="header-section-number">1.2.1</span> Introduction</a></li>
-  <li><a href="#original-visualization-a-critical-review-1" id="toc-original-visualization-a-critical-review-1" class="nav-link" data-scroll-target="#original-visualization-a-critical-review-1"><span class="header-section-number">1.2.2</span> Original Visualization: A Critical Review</a></li>
-  <li><a href="#redesigned-visualization-1" id="toc-redesigned-visualization-1" class="nav-link" data-scroll-target="#redesigned-visualization-1"><span class="header-section-number">1.2.3</span> Redesigned Visualization</a></li>
-  <li><a href="#key-insights-1" id="toc-key-insights-1" class="nav-link" data-scroll-target="#key-insights-1"><span class="header-section-number">1.2.4</span> Key Insights</a></li>
+  <li><a href="#overview-1" id="toc-overview-1" class="nav-link" data-scroll-target="#overview-1"><span class="header-section-number">1.2.1</span> 0.1 Overview</a></li>
+  <li><a href="#data-preparation-and-analysis-1" id="toc-data-preparation-and-analysis-1" class="nav-link" data-scroll-target="#data-preparation-and-analysis-1"><span class="header-section-number">1.2.2</span> 0.2 Data Preparation and Analysis</a></li>
+  <li><a href="#visualizations-1" id="toc-visualizations-1" class="nav-link" data-scroll-target="#visualizations-1"><span class="header-section-number">1.2.3</span> 0.3 Visualizations</a></li>
+  <li><a href="#real-world-application-1" id="toc-real-world-application-1" class="nav-link" data-scroll-target="#real-world-application-1"><span class="header-section-number">1.2.4</span> 0.4 Real-World Application</a></li>
   </ul></li>
-  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion"><span class="header-section-number">1.3</span> Conclusion</a></li>
-  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">1.4</span> References</a>
+  <li><a href="#research-question-3-predicting-severity-of-liver-disease" id="toc-research-question-3-predicting-severity-of-liver-disease" class="nav-link" data-scroll-target="#research-question-3-predicting-severity-of-liver-disease"><span class="header-section-number">1.3</span> Research Question 3: Predicting Severity of Liver Disease</a>
   <ul class="collapse">
-  <li><a href="#cricket-performance-redesign-references" id="toc-cricket-performance-redesign-references" class="nav-link" data-scroll-target="#cricket-performance-redesign-references"><span class="header-section-number">1.4.1</span> Cricket Performance Redesign References</a></li>
-  <li><a href="#nfl-super-bowl-wins-redesign-references" id="toc-nfl-super-bowl-wins-redesign-references" class="nav-link" data-scroll-target="#nfl-super-bowl-wins-redesign-references"><span class="header-section-number">1.4.2</span> NFL Super Bowl Wins Redesign References</a></li>
+  <li><a href="#overview-2" id="toc-overview-2" class="nav-link" data-scroll-target="#overview-2"><span class="header-section-number">1.3.1</span> 0.1 Overview</a></li>
+  <li><a href="#methodology" id="toc-methodology" class="nav-link" data-scroll-target="#methodology"><span class="header-section-number">1.3.2</span> 0.2 Methodology</a></li>
+  <li><a href="#visualizations-2" id="toc-visualizations-2" class="nav-link" data-scroll-target="#visualizations-2"><span class="header-section-number">1.3.3</span> 0.3 Visualizations</a></li>
+  <li><a href="#real-world-application-2" id="toc-real-world-application-2" class="nav-link" data-scroll-target="#real-world-application-2"><span class="header-section-number">1.3.4</span> 0.4 Real-World Application</a></li>
   </ul></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion"><span class="header-section-number">1.4</span> Conclusion</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">1.5</span> References</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -150,7 +155,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Sports Data Redesign Projects</h1>
+<h1 class="title">Hepatitis C Data Analysis</h1>
 </div>
 
 
@@ -162,7 +167,8 @@ ul.task-list li input[type="checkbox"] {
     <div class="quarto-title-meta-contents">
              <p>Harkirat Singh, G01476069 </p>
              <p>Shukan Nikikumar Prajapati, G01474606 </p>
-             <p>Group No: 5 </p>
+             <p>DharmpratapSingh ArunodaySingh Vaghela, G01476865 </p>
+             <p>Group No: 7 </p>
           </div>
   </div>
     
@@ -173,121 +179,132 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="sports-data-redesign-projects" class="level1" data-number="1">
-<h1 data-number="1"><span class="header-section-number">1</span> Sports Data Redesign Projects</h1>
-<p>This page showcases two redesign projects focused on <strong>India’s Cricket Performance</strong> and <strong>NFL Super Bowl Wins</strong>. Both projects aim to reimagine data visualizations for clarity, engagement, and actionable insights.</p>
+<section id="hepatitis-c-data-analysis" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Hepatitis C Data Analysis</h1>
+<p>This webpage consolidates the detailed research conducted for three distinct research questions based on the Hepatitis C dataset. Each section retains the original formatting and content from the individual webpages.</p>
 <hr>
-<section id="indias-cricket-performance-redesign" class="level2" data-number="1.1">
-<h2 data-number="1.1" class="anchored" data-anchor-id="indias-cricket-performance-redesign"><span class="header-section-number">1.1</span> India’s Cricket Performance Redesign</h2>
-<section id="introduction" class="level3" data-number="1.1.1">
-<h3 data-number="1.1.1" class="anchored" data-anchor-id="introduction"><span class="header-section-number">1.1.1</span> Introduction</h3>
-<p>This project focuses on redesigning visualizations of India’s cricket team performance metrics, including wins, losses, and key player contributions. By improving the clarity and storytelling of the original visuals, we aim to offer insights that align with strategic decision-making in the sport.</p>
-<hr>
+<section id="research-question-1-age-and-liver-enzymes" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="research-question-1-age-and-liver-enzymes"><span class="header-section-number">1.1</span> Research Question 1: Age and Liver Enzymes</h2>
+<section id="overview" class="level3" data-number="1.1.1">
+<h3 data-number="1.1.1" class="anchored" data-anchor-id="overview"><span class="header-section-number">1.1.1</span> 0.1 Overview</h3>
+<p><strong>Research Question 1:</strong> How do liver enzyme levels (ALP, ALT, AST) change with age in people with hepatitis C compared to healthy individuals?</p>
+<p>This research investigates how liver enzymes, which are important for diagnosing liver issues, vary as people get older, especially comparing those with hepatitis C to healthy people.</p>
 </section>
-<section id="original-visualization-a-critical-review" class="level3" data-number="1.1.2">
-<h3 data-number="1.1.2" class="anchored" data-anchor-id="original-visualization-a-critical-review"><span class="header-section-number">1.1.2</span> Original Visualization: A Critical Review</h3>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="Cricket Original.jpeg" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Original Cricket Performance Chart</figcaption>
-</figure>
-</div>
-<p>The original visualization had the following drawbacks: 1. <strong>Overuse of Pie Charts</strong>: Difficult to compare percentages across multiple charts. 2. <strong>Data Overload</strong>: Too much data presented simultaneously, making it hard to identify patterns. 3. <strong>Lack of Narrative</strong>: The chart failed to tell a compelling story about India’s performance.</p>
-<hr>
+<section id="data-preparation-and-analysis" class="level3" data-number="1.1.2">
+<h3 data-number="1.1.2" class="anchored" data-anchor-id="data-preparation-and-analysis"><span class="header-section-number">1.1.2</span> 0.2 Data Preparation and Analysis</h3>
+<p><strong>Data Preparation</strong><br>
+- Focused on age and liver enzymes (ALP, ALT, AST) by removing missing values and grouping data into age categories (‘Young’, ‘Middle-aged’, ‘Senior’).</p>
+<p><strong>Model Training and Validation</strong><br>
+- A <strong>Random Forest model</strong> with 10-fold cross-validation achieved: - <strong>R-squared:</strong> 0.937 (explaining 93.7% of variability in Albumin levels). - <strong>RMSE:</strong> 0.035 (high precision in predictions).</p>
 </section>
-<section id="redesigned-visualization" class="level3" data-number="1.1.3">
-<h3 data-number="1.1.3" class="anchored" data-anchor-id="redesigned-visualization"><span class="header-section-number">1.1.3</span> Redesigned Visualization</h3>
-<section id="redesigned-bar-plot" class="level4" data-number="1.1.3.1">
-<h4 data-number="1.1.3.1" class="anchored" data-anchor-id="redesigned-bar-plot"><span class="header-section-number">1.1.3.1</span> Redesigned Bar Plot</h4>
-<p><img src="India's Performance Type 1.png" class="img-fluid" alt="Redesigned Plot for Wins and Losses"> <img src="India's Performance Type 2.png" class="img-fluid" alt="Redesigned Plot for Wins and Losses"> <img src="India's Scores Type 1.png" class="img-fluid" alt="Redesigned Plot for Wins and Losses"> <img src="India's Scores Type 2.png" class="img-fluid" alt="Redesigned Plot for Wins and Losses"></p>
-<p>The bar plot simplifies the data, allowing clear comparison between wins and losses over different years or tournaments.</p>
-<hr>
-</section>
-</section>
-<section id="key-insights" class="level3" data-number="1.1.4">
-<h3 data-number="1.1.4" class="anchored" data-anchor-id="key-insights"><span class="header-section-number">1.1.4</span> Key Insights</h3>
+<section id="visualizations" class="level3" data-number="1.1.3">
+<h3 data-number="1.1.3" class="anchored" data-anchor-id="visualizations"><span class="header-section-number">1.1.3</span> 0.3 Visualizations</h3>
 <ol type="1">
-<li><strong>Consistency Over the Years</strong>: The bar plot reveals India’s consistent win ratio in bilateral series.</li>
-<li><strong>Top Performers</strong>: The heatmap identifies players who made significant contributions in high-stakes matches.</li>
-</ol>
-<hr>
-</section>
-</section>
-<section id="nfl-super-bowl-wins-redesign-project" class="level2" data-number="1.2">
-<h2 data-number="1.2" class="anchored" data-anchor-id="nfl-super-bowl-wins-redesign-project"><span class="header-section-number">1.2</span> NFL Super Bowl Wins Redesign Project</h2>
-<section id="introduction-1" class="level3" data-number="1.2.1">
-<h3 data-number="1.2.1" class="anchored" data-anchor-id="introduction-1"><span class="header-section-number">1.2.1</span> Introduction</h3>
-<p>This project reimagines visualizations of NFL Super Bowl victories, analyzing success across teams, divisions, and conferences. By improving upon the original sunburst chart, the redesign focuses on clarity, accessibility, and storytelling.</p>
-<hr>
-</section>
-<section id="original-visualization-a-critical-review-1" class="level3" data-number="1.2.2">
-<h3 data-number="1.2.2" class="anchored" data-anchor-id="original-visualization-a-critical-review-1"><span class="header-section-number">1.2.2</span> Original Visualization: A Critical Review</h3>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="Super Bowl Winners.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Original Sunburst Chart of NFL Super Bowl Wins</figcaption>
-</figure>
-</div>
-<p>The original sunburst chart has several drawbacks: 1. <strong>Complexity vs.&nbsp;Utility</strong>: The radial layout obscures clarity and makes comparison difficult. 2. <strong>Design Preferences</strong>: Pie and sunburst charts distort data, violating best practices.</p>
-<hr>
-</section>
-<section id="redesigned-visualization-1" class="level3" data-number="1.2.3">
-<h3 data-number="1.2.3" class="anchored" data-anchor-id="redesigned-visualization-1"><span class="header-section-number">1.2.3</span> Redesigned Visualization</h3>
-<section id="redesigned-dot-plot" class="level4" data-number="1.2.3.1">
-<h4 data-number="1.2.3.1" class="anchored" data-anchor-id="redesigned-dot-plot"><span class="header-section-number">1.2.3.1</span> Redesigned Dot Plot</h4>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="Dot Plot.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Redesigned Dot Plot of NFL Team Wins</figcaption>
-</figure>
-</div>
-<p>This dot plot provides clear, comparable data, categorizing teams by division and conference.</p>
-</section>
-<section id="interactive-bar-chart" class="level4" data-number="1.2.3.2">
-<h4 data-number="1.2.3.2" class="anchored" data-anchor-id="interactive-bar-chart"><span class="header-section-number">1.2.3.2</span> Interactive Bar Chart</h4>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="All.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Interactive Bar Plot Visualization</figcaption>
-</figure>
-</div>
-<p>This interactive bar chart allows users to: 1. Filter by <strong>AFC</strong> or <strong>NFC</strong> to explore team victories across conferences. 2. Drill down to divisions for specific comparisons.</p>
-<hr>
-</section>
-</section>
-<section id="key-insights-1" class="level3" data-number="1.2.4">
-<h3 data-number="1.2.4" class="anchored" data-anchor-id="key-insights-1"><span class="header-section-number">1.2.4</span> Key Insights</h3>
-<ol type="1">
-<li><strong>Clarity in Data Storytelling</strong>: Dot plots and bar charts make data more accessible.</li>
-<li><strong>Engagement</strong>: Interactive elements encourage users to explore trends.</li>
-</ol>
-<hr>
-</section>
-</section>
-<section id="conclusion" class="level2" data-number="1.3">
-<h2 data-number="1.3" class="anchored" data-anchor-id="conclusion"><span class="header-section-number">1.3</span> Conclusion</h2>
-<p>Both projects exemplify the power of redesigning sports data visualizations. By replacing complex and cluttered charts with clear, interactive visuals, these projects achieve: - <strong>Improved Analysis</strong>: Provides actionable insights into team performances. - <strong>Enhanced Engagement</strong>: Makes exploring sports data intuitive and informative.</p>
-<p>These redesigns serve as a testament to the art of simplifying complexity and aligning visuals with academic rigor and storytelling.</p>
-<hr>
-</section>
-<section id="references" class="level2" data-number="1.4">
-<h2 data-number="1.4" class="anchored" data-anchor-id="references"><span class="header-section-number">1.4</span> References</h2>
-<section id="cricket-performance-redesign-references" class="level3" data-number="1.4.1">
-<h3 data-number="1.4.1" class="anchored" data-anchor-id="cricket-performance-redesign-references"><span class="header-section-number">1.4.1</span> Cricket Performance Redesign References</h3>
-<ol type="1">
-<li><strong>ESPN Cricinfo Dataset</strong>. <a href="https://www.espncricinfo.com" class="uri">https://www.espncricinfo.com</a></li>
-<li><strong>Wickramasinghe, L.</strong> (2020). “Analyzing Cricket Performance Metrics.” <em>Journal of Sports Analytics</em>.</li>
-<li><strong>Chaturvedi, R.</strong> (2018). “Data-Driven Decisions in Cricket.” <em>Data Science Quarterly</em>.</li>
+<li><p><strong>Enzyme Level Analysis by Age Group</strong><br>
+<img src="RQ1-2.png" class="img-fluid" alt="Enzyme Level Analysis by Age Group"></p></li>
+<li><p><strong>Residuals vs.&nbsp;Fitted Values Plot</strong><br>
+<img src="RQ1-3.png" class="img-fluid" alt="Residuals vs.&nbsp;Fitted Values Plot"></p></li>
 </ol>
 </section>
-<section id="nfl-super-bowl-wins-redesign-references" class="level3" data-number="1.4.2">
-<h3 data-number="1.4.2" class="anchored" data-anchor-id="nfl-super-bowl-wins-redesign-references"><span class="header-section-number">1.4.2</span> NFL Super Bowl Wins Redesign References</h3>
+<section id="approaches-considered-and-rejected" class="level3" data-number="1.1.4">
+<h3 data-number="1.1.4" class="anchored" data-anchor-id="approaches-considered-and-rejected"><span class="header-section-number">1.1.4</span> 0.4 Approaches Considered and Rejected</h3>
+<ul>
+<li><strong>Non-linear Models:</strong> Rejected due to the risk of overcomplication.</li>
+<li><strong>Polynomial Regression:</strong> Avoided for simplicity and interpretability.</li>
+</ul>
+</section>
+<section id="real-world-application" class="level3" data-number="1.1.5">
+<h3 data-number="1.1.5" class="anchored" data-anchor-id="real-world-application"><span class="header-section-number">1.1.5</span> 0.5 Real-World Application</h3>
+<ul>
+<li><strong>Early Diagnosis:</strong> Understanding enzyme changes aids in spotting liver issues early.</li>
+<li><strong>Personalized Treatment:</strong> Tailored treatments based on enzyme changes with age.</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="research-question-2-gender-influence-on-biochemical-responses" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="research-question-2-gender-influence-on-biochemical-responses"><span class="header-section-number">1.2</span> Research Question 2: Gender Influence on Biochemical Responses</h2>
+<section id="overview-1" class="level3" data-number="1.2.1">
+<h3 data-number="1.2.1" class="anchored" data-anchor-id="overview-1"><span class="header-section-number">1.2.1</span> 0.1 Overview</h3>
+<p><strong>Research Question 2:</strong> Does gender influence biochemical responses in hepatitis C patients?</p>
+<p>This question explores how Gamma-Glutamyl Transferase (GGT), an enzyme crucial for assessing liver health, varies between male and female hepatitis C patients.</p>
+</section>
+<section id="data-preparation-and-analysis-1" class="level3" data-number="1.2.2">
+<h3 data-number="1.2.2" class="anchored" data-anchor-id="data-preparation-and-analysis-1"><span class="header-section-number">1.2.2</span> 0.2 Data Preparation and Analysis</h3>
+<p><strong>Data Preparation</strong><br>
+- Focused on variables like gender, GGT levels, age, and hepatitis C status. - Removed missing values for accuracy.</p>
+<p><strong>Statistical Analysis</strong><br>
+- <strong>ANOVA and Multiple Regression Models</strong>: Quantified gender differences and interactions with age. - <strong>Interaction Effects</strong>: Explored age and gender interaction on GGT levels.</p>
+</section>
+<section id="visualizations-1" class="level3" data-number="1.2.3">
+<h3 data-number="1.2.3" class="anchored" data-anchor-id="visualizations-1"><span class="header-section-number">1.2.3</span> 0.3 Visualizations</h3>
 <ol type="1">
-<li><strong>McCann, Adam E.</strong> “Super Bowl Winners.” Tableau Public, Tableau Software, 2020. <a href="https://public.tableau.com/app/profile/adam.e.mccann/viz/SuperBowlWinners_16077204678580/SuperBowlWinners">https://public.tableau.com</a>.</li>
+<li><strong>Interaction of Category, Sex, and Age on log(GGT) Levels</strong><br>
+<img src="RQ2-1.png" class="img-fluid" alt="Interaction of Category, Sex, and Age on log(GGT) Levels"></li>
+</ol>
+</section>
+<section id="real-world-application-1" class="level3" data-number="1.2.4">
+<h3 data-number="1.2.4" class="anchored" data-anchor-id="real-world-application-1"><span class="header-section-number">1.2.4</span> 0.4 Real-World Application</h3>
+<ul>
+<li><strong>Tailored Treatment Strategies:</strong> Insights enable personalized treatments for males and females.</li>
+<li><strong>Enhanced Disease Understanding:</strong> Improves understanding of gender-biased biochemical responses.</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="research-question-3-predicting-severity-of-liver-disease" class="level2" data-number="1.3">
+<h2 data-number="1.3" class="anchored" data-anchor-id="research-question-3-predicting-severity-of-liver-disease"><span class="header-section-number">1.3</span> Research Question 3: Predicting Severity of Liver Disease</h2>
+<section id="overview-2" class="level3" data-number="1.3.1">
+<h3 data-number="1.3.1" class="anchored" data-anchor-id="overview-2"><span class="header-section-number">1.3.1</span> 0.1 Overview</h3>
+<p><strong>Research Question 3:</strong> How can we predict the severity of liver disease in patients?</p>
+<p>The goal was to classify disease stages using biochemical markers and demographic data, aiding in early diagnosis and treatment.</p>
+</section>
+<section id="methodology" class="level3" data-number="1.3.2">
+<h3 data-number="1.3.2" class="anchored" data-anchor-id="methodology"><span class="header-section-number">1.3.2</span> 0.2 Methodology</h3>
+<p><strong>Predictive Modeling</strong><br>
+- Models: Random Forest and Multinomial Logistic Regression. - Validation: Cross-validation to prevent overfitting.</p>
+<p><strong>Evaluation</strong><br>
+- <strong>AUC Scores:</strong> - Blood Donor: 0.99 - Hepatitis: 0.99 - Fibrosis: 0.99 - Cirrhosis: 0.82</p>
+</section>
+<section id="visualizations-2" class="level3" data-number="1.3.3">
+<h3 data-number="1.3.3" class="anchored" data-anchor-id="visualizations-2"><span class="header-section-number">1.3.3</span> 0.3 Visualizations</h3>
+<ol type="1">
+<li><p><strong>Confusion Matrix Heatmap</strong><br>
+<img src="RQ3-1.png" class="img-fluid" alt="Confusion Matrix Heatmap"></p></li>
+<li><p><strong>ROC Curves for Disease Categories</strong><br>
+<img src="RQ3-2.png" class="img-fluid" alt="ROC Curves for Disease Categories"></p></li>
+<li><p><strong>Variable Importance Plot</strong><br>
+<img src="RQ3-3.png" class="img-fluid" alt="Variable Importance Plot"></p></li>
+</ol>
+</section>
+<section id="real-world-application-2" class="level3" data-number="1.3.4">
+<h3 data-number="1.3.4" class="anchored" data-anchor-id="real-world-application-2"><span class="header-section-number">1.3.4</span> 0.4 Real-World Application</h3>
+<ul>
+<li><strong>Support for Clinical Decisions:</strong> Enhances diagnostic accuracy.</li>
+<li><strong>Managing Healthcare Resources:</strong> Prioritizes care for severe cases.</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="conclusion" class="level2" data-number="1.4">
+<h2 data-number="1.4" class="anchored" data-anchor-id="conclusion"><span class="header-section-number">1.4</span> Conclusion</h2>
+<p>The consolidated analysis across these research questions provides a comprehensive understanding of liver disease dynamics, enabling improved diagnostic and treatment methods.</p>
+<hr>
+</section>
+<section id="references" class="level2" data-number="1.5">
+<h2 data-number="1.5" class="anchored" data-anchor-id="references"><span class="header-section-number">1.5</span> References</h2>
+<ol type="1">
+<li><p><strong>UCI Machine Learning Repository: Hepatitis C Virus (HCV) Dataset</strong>. Available at: <a href="https://archive.ics.uci.edu/dataset/571/hcv+data" class="uri">https://archive.ics.uci.edu/dataset/571/hcv+data</a>.</p></li>
+<li><p><strong>Professor’s Notes on ANOVA</strong></p>
+<ul>
+<li><em>Unit 3 and Unit 4 Notes</em>: Detailed theoretical and practical applications.</li>
+</ul></li>
+<li><p>Box, G. E. P., Hunter, J. S., &amp; Hunter, W. G. (2005). <em>Statistics for Experimenters</em>. Wiley.</p></li>
+<li><p>Montgomery, D. C. (2017). <em>Design and Analysis of Experiments</em>. Wiley.</p></li>
+<li><p>Neter, J., Wasserman, W., &amp; Kutner, M. H. (1996). <em>Applied Linear Statistical Models</em>. McGraw-Hill.</p></li>
 </ol>
 
 
-</section>
 </section>
 </section>
 

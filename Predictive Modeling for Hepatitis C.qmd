@@ -1,0 +1,139 @@
+---
+title: "Hepatitis C Data Analysis"
+author: 
+  - "Harkirat Singh, G01476069"
+  - "Shukan Nikikumar Prajapati, G01474606"
+  - "DharmpratapSingh ArunodaySingh Vaghela, G01476865"
+  - "Group No: 7"
+format: 
+  html:
+    theme: Yeti
+    mainfont: poppins
+    css: styles.css
+    toc: true
+    number-sections: true
+---
+
+# Hepatitis C Data Analysis
+
+This webpage consolidates the detailed research conducted for three distinct research questions based on the Hepatitis C dataset. Each section retains the original formatting and content from the individual webpages.
+
+------------------------------------------------------------------------
+
+## Research Question 1: Age and Liver Enzymes
+
+### 0.1 Overview
+
+**Research Question 1:** How do liver enzyme levels (ALP, ALT, AST) change with age in people with hepatitis C compared to healthy individuals?
+
+This research investigates how liver enzymes, which are important for diagnosing liver issues, vary as people get older, especially comparing those with hepatitis C to healthy people.
+
+### 0.2 Data Preparation and Analysis
+
+**Data Preparation**\
+- Focused on age and liver enzymes (ALP, ALT, AST) by removing missing values and grouping data into age categories ('Young', 'Middle-aged', 'Senior').
+
+**Model Training and Validation**\
+- A **Random Forest model** with 10-fold cross-validation achieved: - **R-squared:** 0.937 (explaining 93.7% of variability in Albumin levels). - **RMSE:** 0.035 (high precision in predictions).
+
+### 0.3 Visualizations
+
+1.  **Enzyme Level Analysis by Age Group**\
+    ![Enzyme Level Analysis by Age Group](RQ1-2.png)
+
+2.  **Residuals vs. Fitted Values Plot**\
+    ![Residuals vs. Fitted Values Plot](RQ1-3.png)
+
+### 0.4 Approaches Considered and Rejected
+
+-   **Non-linear Models:** Rejected due to the risk of overcomplication.
+-   **Polynomial Regression:** Avoided for simplicity and interpretability.
+
+### 0.5 Real-World Application
+
+-   **Early Diagnosis:** Understanding enzyme changes aids in spotting liver issues early.
+-   **Personalized Treatment:** Tailored treatments based on enzyme changes with age.
+
+------------------------------------------------------------------------
+
+## Research Question 2: Gender Influence on Biochemical Responses
+
+### 0.1 Overview
+
+**Research Question 2:** Does gender influence biochemical responses in hepatitis C patients?
+
+This question explores how Gamma-Glutamyl Transferase (GGT), an enzyme crucial for assessing liver health, varies between male and female hepatitis C patients.
+
+### 0.2 Data Preparation and Analysis
+
+**Data Preparation**\
+- Focused on variables like gender, GGT levels, age, and hepatitis C status. - Removed missing values for accuracy.
+
+**Statistical Analysis**\
+- **ANOVA and Multiple Regression Models**: Quantified gender differences and interactions with age. - **Interaction Effects**: Explored age and gender interaction on GGT levels.
+
+### 0.3 Visualizations
+
+1.  **Interaction of Category, Sex, and Age on log(GGT) Levels**\
+    ![Interaction of Category, Sex, and Age on log(GGT) Levels](RQ2-1.png)
+
+### 0.4 Real-World Application
+
+-   **Tailored Treatment Strategies:** Insights enable personalized treatments for males and females.
+-   **Enhanced Disease Understanding:** Improves understanding of gender-biased biochemical responses.
+
+------------------------------------------------------------------------
+
+## Research Question 3: Predicting Severity of Liver Disease
+
+### 0.1 Overview
+
+**Research Question 3:** How can we predict the severity of liver disease in patients?
+
+The goal was to classify disease stages using biochemical markers and demographic data, aiding in early diagnosis and treatment.
+
+### 0.2 Methodology
+
+**Predictive Modeling**\
+- Models: Random Forest and Multinomial Logistic Regression. - Validation: Cross-validation to prevent overfitting.
+
+**Evaluation**\
+- **AUC Scores:** - Blood Donor: 0.99 - Hepatitis: 0.99 - Fibrosis: 0.99 - Cirrhosis: 0.82
+
+### 0.3 Visualizations
+
+1.  **Confusion Matrix Heatmap**\
+    ![Confusion Matrix Heatmap](RQ3-1.png)
+
+2.  **ROC Curves for Disease Categories**\
+    ![ROC Curves for Disease Categories](RQ3-2.png)
+
+3.  **Variable Importance Plot**\
+    ![Variable Importance Plot](RQ3-3.png)
+
+### 0.4 Real-World Application
+
+-   **Support for Clinical Decisions:** Enhances diagnostic accuracy.
+-   **Managing Healthcare Resources:** Prioritizes care for severe cases.
+
+------------------------------------------------------------------------
+
+## Conclusion
+
+The consolidated analysis across these research questions provides a comprehensive understanding of liver disease dynamics, enabling improved diagnostic and treatment methods.
+
+------------------------------------------------------------------------
+
+## References
+
+1.  **UCI Machine Learning Repository: Hepatitis C Virus (HCV) Dataset**. Available at: <https://archive.ics.uci.edu/dataset/571/hcv+data>.
+
+2.  **Professor's Notes on ANOVA**
+
+    -   *Unit 3 and Unit 4 Notes*: Detailed theoretical and practical applications.
+
+3.  Box, G. E. P., Hunter, J. S., & Hunter, W. G. (2005). *Statistics for Experimenters*. Wiley.
+
+4.  Montgomery, D. C. (2017). *Design and Analysis of Experiments*. Wiley.
+
+5.  Neter, J., Wasserman, W., & Kutner, M. H. (1996). *Applied Linear Statistical Models*. McGraw-Hill.

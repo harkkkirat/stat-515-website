@@ -4,9 +4,30 @@ image: IMG_7943.JPG
 about:
   template: jolla
   image-shape: round
-  image-width: 15em
-  links: 
+  image-width: 12em
+  links:
     - text: Email
       icon: envelope
       href: mailto:singharkirat03@gmail.com
+    - text: LinkedIn
+      icon: linkedin
+      href: https://www.linkedin.com/in/harkirat-singh/
+format:
+  html:
+    theme: Yeti
+    css: styles.css
+    toc: false
 ---
+
+# Welcome to My Portfolio
+
+Welcome to my portfolio! I'm **Harkirat Singh**, a **Data Analytics Engineer** and a **Master's student at George Mason University**. My passion lies in leveraging **data science, machine learning**, and **big data analytics** to solve real-world problems and create innovative solutions.
+
+This website showcases my projects, research, and professional achievements in the field of data science. Feel free to explore the following:
+
+-   **Bridge Longevity Analysis**: Optimizing infrastructure maintenance through data-driven insights.
+-   **Predictive Modeling for Hepatitis C**: Leveraging machine learning to predict liver enzyme levels.
+-   **India's Cricket Performance Redesign**: Enhancing sports analytics visualization.
+-   **Movie Recommendation System Using KNN**: Building a scalable recommendation system.
+
+Stay connected with me through the links below!

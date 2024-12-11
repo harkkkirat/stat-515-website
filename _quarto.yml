@@ -3,23 +3,23 @@ project:
   output-dir: docs
 
 website:
-  title: "Harkirat Singh"
+  title: "Home"
   navbar:
     left:
-      - RQ1.qmd
-      - RQ2.qmd
-      - RQ3.qmd
-      - Codes for Research Question 1.qmd
-      - Codes for Research Question 2.qmd
-      - Codes for Research Question 3.qmd
+      - text: "Bridge Longevity Analysis"
+        href: Bridge Longevity.qmd
+      - text: "Predictive Modeling for Hepatitis C"
+        href: Predictive Modeling for Hepatitis C.qmd
+      - text: "Movie Recommendation System (KNN)"
+        href: Movie Recommendation using KNN.qmd
+      - text: "India's Cricket Performance Redesign"
+        href: India Performance Redesign.qmd
+
 format:
   html:
     theme: Yeti
     mainfont: poppins
-    
     css: styles.css
     toc: true
-
-
-
-
+    toc-location: left
+    number-sections: true
